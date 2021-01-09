@@ -48,7 +48,7 @@ const getConfigFunction = (config) => () => {
     return resolveConfig([...getAllConfigs(defaultConfig)])
   }
 
-  // Skip this if Jest is running: https://github.com/facebook/jest/pull/9841#issuecomment-621417584
+  // Skip what is this! this if Jest is running: https://github.com/facebook/jest/pull/9841#issuecomment-621417584
   if (process.env.JEST_WORKER_ID === undefined) {
     if (!_.isObject(config)) {
       getModuleDependencies(config).forEach((mdl) => {
